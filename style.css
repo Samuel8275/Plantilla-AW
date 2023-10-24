@@ -1,0 +1,67 @@
+body {
+    background-color: blue;
+    margin: 0 5%;
+}
+
+.logo {
+    background: pink url(img/koenigsegg_jesko.webp) no-repeat scroll 50% 100%;
+    background-size: 40% auto;
+    background-position:bottom center;
+    border: 2px dotted gray;
+    margin: 10px auto 10px auto;
+    width: 80%;
+    height: 150px;
+}
+
+.logo h2 {
+    margin: 2.5em 0 auto 2em;
+}
+
+.banner1 {
+    background-color: yellow;
+    border: 2px solid white;
+    float: left;
+    width: 48%;
+    height: 100px;
+    text-align: center;
+}
+
+.banner2 {
+    background-color: yellow;
+    border: 2px solid white;
+    float: right;
+    width: 48%;
+    height: 100px;
+    text-align: center;
+}
+
+.contenidos {
+    margin-top: 8em;
+}
+
+.menu {
+    background-color: orange;
+    border: 2px solid white;
+    float: left;
+    width: 20%;
+    height: 700px;
+    text-align: center;
+}
+
+.menu h2 {
+    line-height: 700px;
+}
+
+.informacion {
+    background-color: white;
+    border: 2px solid black;
+    float: right;
+    width: 78%;
+    height: 700px;
+    text-align: center;
+}
+
+.informacion p {
+    font-size: 1.5em;
+    margin: 30% 0;
+}
