@@ -4,23 +4,28 @@ body {
 }
 
 .logo {
-    background: pink url(img/koenigsegg_jesko.webp) no-repeat scroll 50% 100%;
-    background-size: 40% auto;
-    background-position:bottom center;
+    background: pink;
     border: 2px dotted gray;
     margin: 10px auto 10px auto;
     width: 80%;
     height: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo h2 {
-    margin: 2.5em 0 auto 2em;
+    margin: 2.5em 0 0 2em;
+}
+
+.banners {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .banner1 {
     background-color: yellow;
     border: 2px solid white;
-    float: left;
     width: 48%;
     height: 100px;
     text-align: center;
@@ -29,20 +34,21 @@ body {
 .banner2 {
     background-color: yellow;
     border: 2px solid white;
-    float: right;
     width: 48%;
     height: 100px;
     text-align: center;
 }
 
 .contenidos {
-    margin-top: 8em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1em;
 }
 
 .menu {
     background-color: orange;
     border: 2px solid white;
-    float: left;
     width: 20%;
     height: 700px;
     text-align: center;
@@ -55,7 +61,6 @@ body {
 .informacion {
     background-color: white;
     border: 2px solid black;
-    float: right;
     width: 78%;
     height: 700px;
     text-align: center;
@@ -64,4 +69,35 @@ body {
 .informacion p {
     font-size: 1.5em;
     margin: 30% 0;
+}
+
+@media screen and (max-width: 750px) {
+ 	.banners {
+ 		flex-flow: column wrap;
+ 		align-items: center;
+ 	}
+ 	.banner1 {
+ 		width: 80%;
+ 		margin-bottom: 1em;
+ 	}
+ 	.banner2 {
+ 		width: 80%;
+ 	}
+ 	.contenidos {
+ 		flex-flow: column wrap;	
+ 		align-items: center;
+ 		margin-bottom: 1em;
+ 	}
+ 	.menu {
+ 		width: 80%;
+ 		height: 500px;
+ 		margin-bottom: 1em;
+ 	}
+ 	.menu h2 {
+ 		line-height: 450px;
+ 	}
+ 	.informacion {
+ 		width: 80%;
+ 		height: 500px;
+ 	}
 }
